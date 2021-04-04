@@ -1,0 +1,18 @@
+{
+  "name": "profile-card-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:scss": "node-sass --output-style compressed -o dist/styles src/styles",
+    "watch:scss": "onchange -i -v \"./src/styles/*.scss\" -- npm run build:scss",
+    "start": "browser-sync -s -f \"./index.html, dist/**/*\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "node-sass": "^5.0.0",
+    "onchange": "^7.1.0"
+  }
+}
